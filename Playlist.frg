@@ -42,10 +42,6 @@ sig Song {
 // Music genres
 sig Genre {}
 
-// Boolean representation (needed for Froglet's lack of set multiplicity)
-abstract sig Boolean {}
-one sig True, False extends Boolean {}
-
 // A playlist represents a shuffled sequence of songs
 sig Playlist {
     // Maps position to song (partial function since not all positions may be filled)

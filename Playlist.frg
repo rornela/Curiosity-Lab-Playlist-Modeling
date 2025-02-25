@@ -62,7 +62,7 @@ sig Playlist {
 pred wellformed {
     // All songs have valid attribute values
     all s: Song | {
-        // Energy is between 1 and 10 inclusive
+        // Energy cannot be negative 
         s.energy >= 0
         
         // Play count cannot be negative
